@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  /* border: 1px solid white; */
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(black, red);
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#c1 {
+  height: 40px;
+  /* border: 1px solid rgba(242, 233, 233, 0.3); */
+  width: 101vw;
+  border-top-width: 4px;
+  color: white;
+  margin-bottom: 50px;
+  text-align: center;
+  line-height: 30px;
+  letter-spacing: 3px;
+  font-size: small;
+  font-stretch: condensed;
+  position: fixed;
+  top: 0;
+}
+
+.c {
+  position: relative;
+  /* width:90vw; */
+  height: 60px;
+  border: 1px solid rgba(242, 233, 233, 0.3);
+  /* width: 248px; */
+  /* border-top-width: 4px; */
+  color: white;
+  background: linear-gradient(140deg, rgb(50, 29, 29), red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.c:hover {
+  background: linear-gradient(140deg, rgb(50, 29, 29), rgb(18, 0, 0));
+  transition: 0.5s;
+}
+
+#c5 {
+  height: 140px;
+  /* border: 1px solid rgba(242, 233, 233, 0.3); */
+  width: 100vw;
+  /* border-top-width: 4px; */
+  color: white;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(140deg, rgb(50, 29, 29), red);
+  position: fixed;
+  bottom: 0px;
+  width: 101vw;
+
+}
+
+#songList {
+  width: 95vw;
+  height: 290px;
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  width: .8rem;
+  /* height: 0.6rem; */
+
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(0, 0%, 100%);
+  /* margin-block: 1rem; */
+  /* border-radius: 13px; */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(black, red);
+  border: 0.05rem solid hsl(0, 0%, 100%);
+  ;
+  /* border-radius: 13px; */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(0, 87%, 9%);
+
+}
+
+.slidecontainer {
+  width: 180vh;
+  /* Width of the outside container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 60px;
+
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;
+  /* Override default CSS styles */
+  appearance: none;
+  width: 90%;
+  /* Full-width */
+  height: 1px;
+  /* Specified height */
+  background: #d3d3d3;
+  /* Grey background */
+  outline: none;
+  /* Remove outline */
+  opacity: 0.7;
+  /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s;
+  /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1;
+  /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  width: 15px;
+  /* Set a specific slider handle width */
+  height: 15px;
+  /* Slider handle height */
+  background: #ffffff;
+  /* Green background */
+  cursor: pointer;
+  /* Cursor on hover */
+  border-radius: 50%;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 18px;
+
+}
+
+.fas {
+  transition-property: color;
+  margin: 5px;
+}
+
+.fas:hover {
+  color: black;
+  transition: 0.9;
+}
+
+.songItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  position: absolute;
+  left: 3px;
+  width: 60px;
+}
+
+.songItemPlay {
+  position: absolute;
+  right: 70px;
+}
+
+.songName {
+  width: 180px;
+  height: 24px;
+  /* overflow: hidden; */
+  position: relative;
+  left: -60px;
+}
